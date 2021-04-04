@@ -1,0 +1,38 @@
+Tebrikler Fatih Yavuz, g�rev i�eriine ula_t1n!
+
+0_te beklediimiz g�revin gereksinimleri;
+
+Tercih ettiiniz bir dil ile (tercihen Java / Go / PHP / Python) yap1lacak bir REST API'da GET, POST, PUT ve DELETE isteklerini kar_1layabilecek 4 farkl1 endpoint sunulmal1d1r. POST ve PUT metotlar1, istekleri bo_ request body ile kabul edebilmelidir.
+
+Bu API'ye gelen her istek i�in random 0-3 sn aras1nda ba_ar1l1 bir yan1t d�nmeli ve yan1t d�n�lmeden hemen �nce "{metot tipi},{istek cevaplama ms},{timestamp}" gibi bir i�erik ile log dosyas1na istein ne kadar s�rd�� yaz1lmal1d1r. �rn log: "GET,1000,1614679220"
+
+Async bir job, log dosyas1na anl1k olarak yaz1lan sat1rlar1 al1p Kafka'ya belirlenen bir formatta g�ndermelidir.
+
+Bir consumer Kafka'ya g�nderilen log bilgisini yakalay1p, uygun g�r�len bir veritaban1na yazmal1d1r (RDBMS veya NoSQL gibi).
+
+Son 1 saatteki API isteklerinin ne kadar s�rede tamamland1klar1 bir dashboard ekran1nda grafik olarak g�sterilmeli ve grafik canl1 olarak g�ncellenmelidir.
+
+0stek tiplerine (PUT,DELETE gibi) g�re ayr1 renklendirme yap1lmal1d1r.
+
+�rnek grafik ekran g�r�nt�s�;
+
+https://kartaca.com/wp-content/uploads/2021/03/cekirdekten_yetisenler_usg_dashboard.png
+
+
+Kod deposunu bize iletirken senden istediimiz sana �zel anahtar kodu: gAAAAABgUIFnn8dMfxzK3kh3QvXftJ03Nru8Wq8vMJZQRYcgF8_IYsS9BaDjm3txxSn5yZxDZr2BA3c5aAz08_qb36LedOgdNngymtbmgwn1hrVXJIjPxghgv4xk25mwSixShC7kIosIaD-jfEmp6hGsEEab1APaiGafargalinDExjdUn0HfxsMY_HG0e4IIWoGX-z9zi9ygEGZMfQPhs3uBu1FiQZyoA==
+
+
+Notlar;
+
+* Uygulaman1n ve ara y�z�n Docker ile nas1l derlenip �al1_1r hale getirilecei README olarak yaz1lm1_ olmal1d1r. Docker-compose �zerinden tek bir komut ile �al1_acak _ekilde servis edilmelidir. Veritaban1 gibi ba1ml1l1klar da i�erisinde yer almal1d1r.
+
+* README i�erisinde servis endpoint'lerine nas1l istek at1laca1, ara y�z adresinin ne olduu gibi projenin nas1l �al1_t1r1laca1na dair bilgiler yer almal1d1r.
+
+* Yukar1da verilen sana �zel anahtar kodu da README i�erisine eklenmelidir.
+
+* G�rev i�eriine ula_mak i�in kullan1lan kod ve proje GitHub, GitLab, Bitbucket gibi eri_ime a�1k bir repo'ya g�nderilerek, balant1 adresi insankaynaklari@kartaca.com'a iletilmelidir. Kod deposu �zerinden payla_1m salanam1yorsa, indirilebilir dosyalara ula_mam1z i�in bir dosya/balant1 iletilmelidir.
+
+
+G�revlerdeki t�m gereksinimleri yerine getiremediyseniz bile, moralinizi bozmay1n ve tamamlad11n1z kadar1n1 bizimle mutlaka payla_1n.
+
+Kolay gelsin!
